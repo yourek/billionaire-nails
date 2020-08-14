@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: aliceblue;
+  color: black;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+section {
+  padding: 30px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(48, 48, 48, 0.15),
+      rgba(48, 48, 48, 0.15)
+    ),
+    url(img/paint.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+p {
+  padding: 10px;
+  font-size: 90%;
+  text-align: justify;
+  margin-bottom: 50px;
+  line-height: 125%;
+}
+
+.long {
+  line-height: 150%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 300%;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+h2 {
+  color: #ae117d;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 140%;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #ae117d;
+  content: ' ';
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #ae117d;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 115%;
+  font-weight: 200;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.my-name {
+  margin: 0;
+  margin-left: 2%;
+  font-size: 115%;
+  font-weight: 300;
+  word-spacing: 3px;
+  color: #ffffff;
+}
+
+.top-pane {
+  position: absolute;
+  /*width: 1140px;*/
+  top: 40%;
+  left: 15%;
+  /*border: 0px solid black;*/
+  border-radius: 50px;
+  padding: 10px;
+}
+
+/* ----- NAVIGATION ----- */
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.main-nav {
+  float: right;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+  list-style: none;
+  /*transform: translate(0, 50%);*/
+  font-size: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 2 px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px, solid, transparent;
+  transition: border-bottom 0.1s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #cf40a4;
+}
+
+.sticky-class {
+  position: fixed;
+  content: 'test';
+  background-image: linear-gradient(
+      rgba(48, 48, 48, 0.15),
+      rgba(48, 48, 48, 0.15)
+    ),
+    url(img/paint.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  box-shadow: 0px 1px 5px;
+}
+
+.icons {
+  display: block;
+  height: 80px;
+  width: auto;
+  margin: auto;
+  fill: #ae117d;
+}
+
+.footer {
+  font-size: 50%;
+}
+
+/* ------------------------------------ */
+/* Gallery */
+/* ------------------------------------ */
+
+.gallery {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.work-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.work-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.work-photo {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.work-showcase img {
+  opacity: 0.8;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.work-showcase img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/* ------------------------------------ */
+/* Offer */
+/* ------------------------------------ */
+
+.offer-box {
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+  box-shadow: 0 2px #e9e9e9;
+  margin: 0 2%;
+}
+
+.offer-name {
+  text-align: left;
+  font-size: 100%;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+.price {
+  font-size: 150%;
+  font-weight: 50;
+  color: #424242;
+  margin-bottom: 1px;
+}
+
+.price span {
+  font-size: 45%;
+  font-weight: 150;
+}
+
+.offer-box div:first-child {
+  background-color: #ffe6f2;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.offer-box div:last-child {
+  background-color: #fff0f7;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.offer-box div {
+  /*background-color: grey;
+  border-bottom: 1px solid #e8e8e8;*/
+  padding: 0 10px;
+}
+
+.price-offer li {
+  list-style: none;
+  font-size: 90%;
+}
+
+.price-offer li span {
+  color: #ae117d;
+}
+
+.price-offer li:first-child {
+  padding-top: 15px;
+}
+.price-offer li:last-child {
+  margin-bottom: 15px;
+}
