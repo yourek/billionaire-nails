@@ -59,6 +59,10 @@ p {
   line-height: 125%;
 }
 
+ul {
+  list-style: none;
+}
+
 .long {
   line-height: 150%;
   width: 70%;
@@ -295,4 +299,58 @@ nav {
 }
 .price-offer li:last-child {
   margin-bottom: 15px;
+}
+
+/* ------------------------------------ */
+/* Contact */
+/* ------------------------------------ */
+
+.profile-pic {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.contact-pic-and-name {
+  font-size: 150%;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.contact-bullets {
+  margin-left: 120px;
+}
+
+.contact li {
+  margin: 10px 0px;
+  vertical-align: middle;
+}
+
+.contact-icon {
+  vertical-align: middle;
+}
+
+.contact li a:link,
+.contact li a:visited {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px, solid, transparent;
+  transition: border-bottom 0.1s;
+}
+
+.contact #mail:hover,
+.contact #mail:active {
+  /*border-bottom: 2px solid #cf40a4;*/
+  color: #cf40a4;
+}
+
+.contact #facebook:hover,
+.contact #facebook:active {
+  color: #3b5998;
+}
+
+.contact #instagram:hover,
+.contact #instagram:active {
+  color: #517fa4;
 }

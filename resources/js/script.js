@@ -59,11 +59,17 @@ $(document).ready(function () {
     });
 });
 
-//document.querySelector('h1').style.color = 'red';
-function adjustNavigatePaneYPosition(yScroll) {
-  document.getElementById('test').scrollTop(50);
-}
+var home = { lat: 52.244728, lng: 20.914467 };
 
-document.addEventListener('scroll', function (evnt) {
-  var yPositionOfScroll = window.scrollY;
+// The map, centered at Uluru
+
+var map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 16,
+  center: home,
+});
+
+var marker = new google.maps.Marker({
+  position: home,
+  map: map,
+  title: 'My Home!',
 });
