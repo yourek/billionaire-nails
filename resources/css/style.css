@@ -257,7 +257,7 @@ nav {
 }
 
 .price {
-  font-size: 150%;
+  font-size: 100%;
   font-weight: 50;
   color: #424242;
   margin-bottom: 1px;
@@ -285,9 +285,13 @@ nav {
   padding: 0 10px;
 }
 
+.price-offer h3 {
+  font-size: 60%;
+}
+
 .price-offer li {
   list-style: none;
-  font-size: 90%;
+  font-size: 60%;
 }
 
 .price-offer li span {
@@ -299,6 +303,19 @@ nav {
 }
 .price-offer li:last-child {
   margin-bottom: 15px;
+}
+
+.icons {
+  display: block;
+  height: 80px;
+  width: auto;
+  margin: auto;
+  fill: #ae117d;
+}
+
+.price-offer .icons {
+  height: 25px;
+  display: inline-flex;
 }
 
 /* ------------------------------------ */

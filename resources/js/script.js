@@ -73,3 +73,14 @@ var marker = new google.maps.Marker({
   map: map,
   title: 'My Home!',
 });
+
+var contentString = `Mój adres:
+<div><p style = "margin: 0 0;">ul. Kazubów 8b/36</p><p style = "margin: 0 0;">01-466 Warszawa</p></div>`;
+
+const infowindow = new google.maps.InfoWindow({
+  content: contentString,
+});
+
+google.maps.event.addListener(marker, 'click', function () {
+  infowindow.open(map, marker);
+});
