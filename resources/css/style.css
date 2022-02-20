@@ -254,6 +254,7 @@ nav {
   font-size: 100%;
   margin-bottom: 0;
   padding: 5px;
+  font-weight: 500;
 }
 
 .price {
@@ -268,17 +269,54 @@ nav {
   font-weight: 150;
 }
 
-.offer-box div:first-child {
+.nails div:first-child {
   background-color: #ffe6f2;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
-.offer-box div:last-child {
+.nails div:last-child {
   background-color: #fff0f7;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+
+.eye div:first-child {
+  background-color: #e6eeff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.eye div:last-child {
+  background-color: #f0f6ff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.face div:first-child {
+  background-color: #fff9e6;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.face div:last-child {
+  background-color: #fffbf0;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.new div:first-child {
+  background-color: #fff264;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.new div:last-child {
+  background-color: #fff7b3;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
 .offer-box div {
   /*background-color: grey;
   border-bottom: 1px solid #e8e8e8;*/
